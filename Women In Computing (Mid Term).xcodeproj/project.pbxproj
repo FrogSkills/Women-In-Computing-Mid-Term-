@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		49FE65EC2DFCEE3400FC256F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49FE65D32DFCEE3300FC256F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FE65DA2DFCEE3300FC256F;
+			remoteInfo = "Women In Computing (Mid Term)";
+		};
+		49FE65F62DFCEE3400FC256F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49FE65D32DFCEE3300FC256F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FE65DA2DFCEE3300FC256F;
+			remoteInfo = "Women In Computing (Mid Term)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49FE65DB2DFCEE3300FC256F /* Women In Computing (Mid Term).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Women In Computing (Mid Term).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FE65EB2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Women In Computing (Mid Term)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FE65F52DFCEE3400FC256F /* Women In Computing (Mid Term)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Women In Computing (Mid Term)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		49FE65DD2DFCEE3300FC256F /* Women In Computing (Mid Term) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Women In Computing (Mid Term)";
+			sourceTree = "<group>";
+		};
+		49FE65EE2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Women In Computing (Mid Term)Tests";
+			sourceTree = "<group>";
+		};
+		49FE65F82DFCEE3400FC256F /* Women In Computing (Mid Term)UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Women In Computing (Mid Term)UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FE65D82DFCEE3300FC256F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65E82DFCEE3400FC256F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65F22DFCEE3400FC256F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49FE65D22DFCEE3300FC256F = {
+			isa = PBXGroup;
+			children = (
+				49FE65DD2DFCEE3300FC256F /* Women In Computing (Mid Term) */,
+				49FE65EE2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests */,
+				49FE65F82DFCEE3400FC256F /* Women In Computing (Mid Term)UITests */,
+				49FE65DC2DFCEE3300FC256F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49FE65DC2DFCEE3300FC256F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FE65DB2DFCEE3300FC256F /* Women In Computing (Mid Term).app */,
+				49FE65EB2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests.xctest */,
+				49FE65F52DFCEE3400FC256F /* Women In Computing (Mid Term)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FE65DA2DFCEE3300FC256F /* Women In Computing (Mid Term) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FE65FF2DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)" */;
+			buildPhases = (
+				49FE65D72DFCEE3300FC256F /* Sources */,
+				49FE65D82DFCEE3300FC256F /* Frameworks */,
+				49FE65D92DFCEE3300FC256F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				49FE65DD2DFCEE3300FC256F /* Women In Computing (Mid Term) */,
+			);
+			name = "Women In Computing (Mid Term)";
+			packageProductDependencies = (
+			);
+			productName = "Women In Computing (Mid Term)";
+			productReference = 49FE65DB2DFCEE3300FC256F /* Women In Computing (Mid Term).app */;
+			productType = "com.apple.product-type.application";
+		};
+		49FE65EA2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FE66022DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)Tests" */;
+			buildPhases = (
+				49FE65E72DFCEE3400FC256F /* Sources */,
+				49FE65E82DFCEE3400FC256F /* Frameworks */,
+				49FE65E92DFCEE3400FC256F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49FE65ED2DFCEE3400FC256F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				49FE65EE2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests */,
+			);
+			name = "Women In Computing (Mid Term)Tests";
+			packageProductDependencies = (
+			);
+			productName = "Women In Computing (Mid Term)Tests";
+			productReference = 49FE65EB2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49FE65F42DFCEE3400FC256F /* Women In Computing (Mid Term)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FE66052DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)UITests" */;
+			buildPhases = (
+				49FE65F12DFCEE3400FC256F /* Sources */,
+				49FE65F22DFCEE3400FC256F /* Frameworks */,
+				49FE65F32DFCEE3400FC256F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49FE65F72DFCEE3400FC256F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				49FE65F82DFCEE3400FC256F /* Women In Computing (Mid Term)UITests */,
+			);
+			name = "Women In Computing (Mid Term)UITests";
+			packageProductDependencies = (
+			);
+			productName = "Women In Computing (Mid Term)UITests";
+			productReference = 49FE65F52DFCEE3400FC256F /* Women In Computing (Mid Term)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FE65D32DFCEE3300FC256F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					49FE65DA2DFCEE3300FC256F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					49FE65EA2DFCEE3400FC256F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 49FE65DA2DFCEE3300FC256F;
+					};
+					49FE65F42DFCEE3400FC256F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 49FE65DA2DFCEE3300FC256F;
+					};
+				};
+			};
+			buildConfigurationList = 49FE65D62DFCEE3300FC256F /* Build configuration list for PBXProject "Women In Computing (Mid Term)" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49FE65D22DFCEE3300FC256F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 49FE65DC2DFCEE3300FC256F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FE65DA2DFCEE3300FC256F /* Women In Computing (Mid Term) */,
+				49FE65EA2DFCEE3400FC256F /* Women In Computing (Mid Term)Tests */,
+				49FE65F42DFCEE3400FC256F /* Women In Computing (Mid Term)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FE65D92DFCEE3300FC256F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65E92DFCEE3400FC256F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65F32DFCEE3400FC256F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FE65D72DFCEE3300FC256F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65E72DFCEE3400FC256F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FE65F12DFCEE3400FC256F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49FE65ED2DFCEE3400FC256F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FE65DA2DFCEE3300FC256F /* Women In Computing (Mid Term) */;
+			targetProxy = 49FE65EC2DFCEE3400FC256F /* PBXContainerItemProxy */;
+		};
+		49FE65F72DFCEE3400FC256F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FE65DA2DFCEE3300FC256F /* Women In Computing (Mid Term) */;
+			targetProxy = 49FE65F62DFCEE3400FC256F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49FE65FD2DFCEE3400FC256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49FE65FE2DFCEE3400FC256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49FE66002DFCEE3400FC256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Women In Computing (Mid Term)/Preview Content\"";
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49FE66012DFCEE3400FC256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Women In Computing (Mid Term)/Preview Content\"";
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49FE66032DFCEE3400FC256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Women In Computing (Mid Term).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Women In Computing (Mid Term)";
+			};
+			name = Debug;
+		};
+		49FE66042DFCEE3400FC256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Women In Computing (Mid Term).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Women In Computing (Mid Term)";
+			};
+			name = Release;
+		};
+		49FE66062DFCEE3400FC256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Women In Computing (Mid Term)";
+			};
+			name = Debug;
+		};
+		49FE66072DFCEE3400FC256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F2FU373D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.Women-In-Computing--Mid-Term-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Women In Computing (Mid Term)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FE65D62DFCEE3300FC256F /* Build configuration list for PBXProject "Women In Computing (Mid Term)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FE65FD2DFCEE3400FC256F /* Debug */,
+				49FE65FE2DFCEE3400FC256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FE65FF2DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FE66002DFCEE3400FC256F /* Debug */,
+				49FE66012DFCEE3400FC256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FE66022DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FE66032DFCEE3400FC256F /* Debug */,
+				49FE66042DFCEE3400FC256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FE66052DFCEE3400FC256F /* Build configuration list for PBXNativeTarget "Women In Computing (Mid Term)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FE66062DFCEE3400FC256F /* Debug */,
+				49FE66072DFCEE3400FC256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FE65D32DFCEE3300FC256F /* Project object */;
+}
