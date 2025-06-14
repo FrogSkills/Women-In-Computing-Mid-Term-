@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 struct ContentView: View {
     @State private var nameTitle = ["Ada Lovelace",
@@ -44,16 +45,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-                
-                
-                
+
                 ZStack {
                     
-                    Text("\(nameTitle[currentPerson])")
-                        .scaledToFit()
-                        .minimumScaleFactor(0.9)
+                    Text(" ")
+//                        .scaledToFit()
+//                        .font(.title)
+//                        .foregroundStyle(.white)
+//                        .minimumScaleFactor(0.9)
                         .padding()
-                        .fontWeight(.black)
+//                        .fontWeight(.black)
                         .frame(maxWidth: .infinity)
                         .background(.teal)
                     
@@ -72,7 +73,14 @@ struct ContentView: View {
                                 .fontWeight(.bold)
                         }
                         
-                        Spacer()
+                        Text("\(nameTitle[currentPerson])")
+                            .scaledToFit()
+                            .font(.title)
+                            .foregroundStyle(.white)
+                            .minimumScaleFactor(0.5)
+//                            .padding()
+                            .fontWeight(.black)
+                            .frame(maxWidth: 350)
                         
                         Button {
                             if currentPerson != 14 {
@@ -93,22 +101,41 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundStyle(.white)
                 
-                
+                // Done up to this point
                 
                 
             
             
-            Image(systemName: "swift")
+            Image("\(nameTitle[currentPerson])")
                 .resizable()
-                .foregroundStyle(.orange)
                 .scaledToFit()
-                .frame(width: 100, height: 100)
+                .frame(width: 250, height: 250)
             
-            Rectangle()
-                .background(.teal)
-                .foregroundStyle(.red)
-//                .frame(height: 0)
-                .frame(maxWidth: .infinity)
+            Text("\(personBio[currentPerson])")
+                .frame(maxWidth: .infinity, maxHeight: 700)
+                .padding()
+            
+            ZStack {
+                Text(" ")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.teal)
+                
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        //:TODO add a random num generator, checks to not have the same num already
+                        
+                    } label: {
+                        Image(systemName: "shuffle")
+                            .foregroundStyle(.white)
+                            .fontWeight(.bold)
+                            .font(.title)
+                    }.offset(x: -20)
+                }
+                
+            }
             
         }
     }
