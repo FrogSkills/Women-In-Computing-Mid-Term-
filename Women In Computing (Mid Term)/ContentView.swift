@@ -9,7 +9,7 @@ import SwiftUI
 import AVFAudio
 
 struct ContentView: View {
-    @State private var nameTitle = ["Ada Lovelace",
+    private var nameTitle = ["Ada Lovelace",
                                     "Admiral Grace Hopper",
                                     "The ENIAC Team",
                                     "Sister Mary Kenneth Keller",
@@ -27,7 +27,9 @@ struct ContentView: View {
     
     @State private var currentPerson = 0
     @State private var personPicture = " "
-    @State private var personBio = ["Ada Lovelace: Although she lived well before the invention of modern computers, Ada Lovelace is one of the most famous women in computer science history. Born Augusta Ada Byron, she was the only child of the famous poet Lord Byron who was not born out of wedlock. A few weeks after Ada’s birth, her parents separated, with her mathematically gifted mother taking sole custody of Ada. Her mother managed to steer her away from poetry and towards mathematics and science, but Ada’s understanding of the latter subjects was influenced by the imagination she inherited from her father.\nToday, the Countess of Lovelace is best known for her work on the Analytical Engine, a general-purpose computer designed by Charles Babbage. She is recognized as the first computer programmer for her notes on the machine.",
+    @State private var audioPlayer: AVAudioPlayer!
+    
+    private var personBio = ["Ada Lovelace: Although she lived well before the invention of modern computers, Ada Lovelace is one of the most famous women in computer science history. Born Augusta Ada Byron, she was the only child of the famous poet Lord Byron who was not born out of wedlock. A few weeks after Ada’s birth, her parents separated, with her mathematically gifted mother taking sole custody of Ada. Her mother managed to steer her away from poetry and towards mathematics and science, but Ada’s understanding of the latter subjects was influenced by the imagination she inherited from her father.\nToday, the Countess of Lovelace is best known for her work on the Analytical Engine, a general-purpose computer designed by Charles Babbage. She is recognized as the first computer programmer for her notes on the machine.",
                                     "Admiral Grace Hopper: Grace Murray Hopper, dubbed “Amazing Grace” for reasons that will become obvious, was at the forefront of the relatively new field of computer science. She earned a master’s degree and Ph.D. from Yale in Mathematics in the early 1930s, taught for several years at Vasser College, where she had obtained her bachelor’s degrees in Mathematics and Physics, then joined the Navy in 1943 when the U.S. entered World War II. Because of her age and small frame, Hopper had to receive a special exemption to join the Navy.\nDuring her naval career, Grace attained the rank of rear admiral and worked on the Harvard Mark I and Mark II computers. Although she left active service in 1946, she remained a Navy reservist and even returned to active duty at the age of 60 to help standardize the Navy’s computer programming languages. She retired at the age of 79 as the oldest serving officer in the U.S. Armed Forces.\nIn the private sector, her team developed the first computer language compiler, A-0, as well as Flow-Matic, the first programming language to use English-like commands. She also worked on the UNIVAC I computer and helped popularize COBOL, the first standardized general business computer language. A College of Yale University is named in her honor.",
                                     "The ENIAC Team: If you read “Famous Women in Computer Science” and immediately think of the 2016 film “Hidden Figures,” you’re not alone. NASA was not the only organization hiring female mathematicians to serve as human computers. During World War II, some of the best and brightest were selected to calculate ballistic trajectories. Many later moved into technology careers, working on the UNIVAC I computer with Grace Hopper as well as ENIAC (Electronic Numerical Integrator and Computer), the world’s first general-purpose computer.\nOn the eve of its debut, ENIAC was non-operational. A group of women who had been working on the machine stayed late to fix it. Their names were Betty Jean Jennings Bartik, Kathleen McNulty, Mauchly Antonelli, Ruth Lichterman Teitelbaum, Frances Bilas Spence, Marlyn Wescoff Meltzer, and Frances Snyder Holberton. All deserve a place on the list of famous computer scientists, though they are best remembered for their collective work.",
                                     "Sister Mary Kenneth Keller: Giving Lord Byron’s daughter a run for her money in the category of “people you wouldn’t expect to be famous computer scientists” is Sister Mary Kenneth Keller. Keller was a nun of the Sisters of Charity of the Blessed Virgin Mary. In 1965 at Washington University, she became one of the first two people — and, notably, the first woman — to earn a doctorate in computer science.\nKeller also earned a Bachelor of Science in Mathematics and a Master of Science in Mathematics and conducted research at the University of Wisconsin, the University of Michigan, Dartmouth College, and Purdue. At Dartmouth, she helped develop the BASIC computer language that allowed even those not well-versed in mathematics to write computer code.",
@@ -45,27 +47,10 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-
-                ZStack {
-                    
-                    Text(" ")
-//                        .scaledToFit()
-//                        .font(.title)
-//                        .foregroundStyle(.white)
-//                        .minimumScaleFactor(0.9)
-                        .padding()
-//                        .fontWeight(.black)
-                        .frame(maxWidth: .infinity)
-                        .background(.teal)
-                    
                     HStack {
 
                         Button {
-                            if currentPerson != 0 {
-                                currentPerson -= 1
-                            } else {
-                                currentPerson = 14
-                            }
+                            currentPerson = (currentPerson != 0) ? currentPerson - 1 : nameTitle.count-1
                             
                         } label: {
                             Image(systemName: "chevron.backward.circle")
@@ -73,21 +58,18 @@ struct ContentView: View {
                                 .fontWeight(.bold)
                         }
                         
+                        
                         Text("\(nameTitle[currentPerson])")
                             .scaledToFit()
                             .font(.title)
                             .foregroundStyle(.white)
                             .minimumScaleFactor(0.5)
-//                            .padding()
                             .fontWeight(.black)
                             .frame(maxWidth: 350)
                         
                         Button {
-                            if currentPerson != 14 {
-                                currentPerson += 1
-                            } else {
-                                currentPerson = 0
-                            }
+                            currentPerson = (currentPerson >= nameTitle.count-1) ? 0 : currentPerson + 1
+                          
                         } label: {
                             Image(systemName: "chevron.forward.circle")
                                 .foregroundStyle(.white)
@@ -95,48 +77,61 @@ struct ContentView: View {
                         }
                     }
                     .padding()
+                    .background(.cyan.opacity(50))
                     
                     
-                }
+                
                 .font(.title)
                 .foregroundStyle(.white)
                 
-                // Done up to this point
-                
-                
-            
             
             Image("\(nameTitle[currentPerson])")
                 .resizable()
                 .scaledToFit()
+                .cornerRadius(10)
                 .frame(width: 250, height: 250)
+                .shadow(radius: 20)
             
-            Text("\(personBio[currentPerson])")
-                .frame(maxWidth: .infinity, maxHeight: 700)
-                .padding()
-            
-            ZStack {
-                Text(" ")
+            ScrollView {
+                Text("\(personBio[currentPerson])")
+                    .frame(maxWidth: .infinity, maxHeight: 700)
                     .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(.teal)
-                
+            }
+            
                 HStack {
                     Spacer()
                     
                     Button {
-                        //:TODO add a random num generator, checks to not have the same num already
+                        playSound(soundName: "theme")
+                        var newIndex: Int
+                        repeat {
+                            newIndex =  Int.random(in: 0...nameTitle.count-1)
+                        } while newIndex == currentPerson
+                        currentPerson = newIndex
+                        
                         
                     } label: {
                         Image(systemName: "shuffle")
                             .foregroundStyle(.white)
                             .fontWeight(.bold)
                             .font(.title)
-                    }.offset(x: -20)
+                    }
                 }
-                
-            }
-            
+                .padding()
+                .background(.cyan.opacity(50))
+        }
+    }
+    
+    func playSound(soundName: String) {
+        guard let soundFile = NSDataAsset(name: soundName) else {
+            print("Error")
+            return
+        }
+        do {
+            audioPlayer = try AVAudioPlayer(data: soundFile.data)
+            audioPlayer.play()
+        } catch {
+            print("Another error")
         }
     }
 }
